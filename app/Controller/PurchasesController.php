@@ -139,4 +139,19 @@ class PurchasesController extends AppController {
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
+
+    /**
+     *@return check if the action is authorized by recent user
+     */
+    public function isAuthorized($user)
+    {
+        // All registered users can access these action
+        if (isset($user) && $user['role'] == 'Staff') {
+            if (in_array($this->action, array('add', 'view', 'index', 'edit', 'delete'))) {
+                return true;
+            }
+
+            return parent::isAuthorized($user);
+        }
+    }
 }

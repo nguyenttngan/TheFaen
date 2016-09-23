@@ -72,7 +72,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => '',
-		'database' => 'thefaen',
+		'database' => 'faen',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);

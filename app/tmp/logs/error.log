@@ -682,3 +682,136 @@ Request URL: /thefaen/foods
 Stack Trace:
 #0 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-09-23 16:14:09 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1049] Unknown database \'thefaen\'',
+  'enabled' => true,
+)
+Request URL: /ISD_PROJECT/thefaen/
+Stack Trace:
+#0 C:\xampp1\htdocs\ISD_PROJECT\thefaen\lib\Cake\Model\Datasource\DboSource.php(267): Mysql->connect()
+#1 C:\xampp1\htdocs\ISD_PROJECT\thefaen\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\xampp1\htdocs\ISD_PROJECT\thefaen\lib\Cake\Model\Model.php(3626): ConnectionManager::getDataSource('default')
+#3 C:\xampp1\htdocs\ISD_PROJECT\thefaen\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\xampp1\htdocs\ISD_PROJECT\thefaen\lib\Cake\Model\Model.php(3653): Model->setSource('users')
+#5 C:\xampp1\htdocs\ISD_PROJECT\thefaen\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#6 C:\xampp1\htdocs\ISD_PROJECT\thefaen\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 C:\xampp1\htdocs\ISD_PROJECT\thefaen\lib\Cake\View\Helper\FormHelper.php(480): FormHelper->_introspectModel('User', 'fields')
+#8 C:\xampp1\htdocs\ISD_PROJECT\thefaen\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\xampp1\htdocs\ISD_PROJECT\thefaen\lib\Cake\View\View.php(971): include('C:\\xampp1\\htdoc...')
+#10 C:\xampp1\htdocs\ISD_PROJECT\thefaen\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp1\\htdoc...', Array)
+#11 C:\xampp1\htdocs\ISD_PROJECT\thefaen\lib\Cake\View\View.php(473): View->_render('C:\\xampp1\\htdoc...')
+#12 C:\xampp1\htdocs\ISD_PROJECT\thefaen\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#13 C:\xampp1\htdocs\ISD_PROJECT\thefaen\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 C:\xampp1\htdocs\ISD_PROJECT\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\xampp1\htdocs\ISD_PROJECT\thefaen\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-09-23 16:22:44 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /ISD_PROJECT/thefaen/upload/2016-09-20/tra_dao.jpg
+Stack Trace:
+#0 C:\xampp1\htdocs\ISD_PROJECT\thefaen\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-09-23 16:22:45 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /ISD_PROJECT/thefaen/upload/2016-09-20/tra-quat-mat-ong.jpg
+Stack Trace:
+#0 C:\xampp1\htdocs\ISD_PROJECT\thefaen\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-09-23 16:22:45 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /ISD_PROJECT/thefaen/upload/2016-09-20/Thumbnail.jpg
+Stack Trace:
+#0 C:\xampp1\htdocs\ISD_PROJECT\thefaen\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-09-23 16:22:45 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /ISD_PROJECT/thefaen/upload/2016-09-20/jasmine-tea-benefits.jpg
+Stack Trace:
+#0 C:\xampp1\htdocs\ISD_PROJECT\thefaen\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-09-23 16:22:45 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /ISD_PROJECT/thefaen/upload/2016-09-20/1457954460-avata.jpg
+Stack Trace:
+#0 C:\xampp1\htdocs\ISD_PROJECT\thefaen\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-09-23 16:22:46 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /ISD_PROJECT/thefaen/upload/2016-09-17/banhmixaxiu-1351657483_500x0.jpg
+Stack Trace:
+#0 C:\xampp1\htdocs\ISD_PROJECT\thefaen\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-09-23 16:22:46 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /ISD_PROJECT/thefaen/upload/2016-09-17/meda.jpg
+Stack Trace:
+#0 C:\xampp1\htdocs\ISD_PROJECT\thefaen\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-09-23 16:22:46 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /ISD_PROJECT/thefaen/upload/1379_P_1431332218325.jpg
+Stack Trace:
+#0 C:\xampp1\htdocs\ISD_PROJECT\thefaen\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-09-23 16:22:47 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /ISD_PROJECT/thefaen/upload/1416283892-bun-thit-nuong-4.jpg
+Stack Trace:
+#0 C:\xampp1\htdocs\ISD_PROJECT\thefaen\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-09-23 16:22:47 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /ISD_PROJECT/thefaen/upload/maxresdefault.jpg
+Stack Trace:
+#0 C:\xampp1\htdocs\ISD_PROJECT\thefaen\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-09-23 16:22:47 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /ISD_PROJECT/thefaen/upload/IMG_6532-586x229.jpg
+Stack Trace:
+#0 C:\xampp1\htdocs\ISD_PROJECT\thefaen\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-09-23 16:22:47 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /ISD_PROJECT/thefaen/upload/suon-xao-chua-ngot-2.jpg
+Stack Trace:
+#0 C:\xampp1\htdocs\ISD_PROJECT\thefaen\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

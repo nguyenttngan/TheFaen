@@ -141,6 +141,21 @@
             'fields' => array('Food.image'),
             'maxLimit' => 10,
         );
+
+        /**
+         *@return check if the action is authorized by recent user
+         */
+        public function isAuthorized($user)
+        {
+            // All registered users can access these action
+            if (isset($user) && $user['role'] == 'Manager') {
+                if (in_array($this->action, array('add', 'view', 'index', 'edit', 'delete'))) {
+                    return true;
+                }
+
+                return parent::isAuthorized($user);
+            }
+        }
     }
 
 
