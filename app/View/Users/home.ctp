@@ -1,0 +1,1 @@
+<?php echo 'Welcome, '. $_SESSION['Auth']['User']['fullname'];?>

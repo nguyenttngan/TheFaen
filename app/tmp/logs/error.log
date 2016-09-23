@@ -1,0 +1,684 @@
+2016-09-11 08:10:43 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /users/login.ctp
+Stack Trace:
+#0 D:\Study\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-09-11 15:49:51 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /users/add
+Stack Trace:
+#0 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 D:\Study\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-11 16:09:01 Error: [MissingComponentException] Component class FormComponent could not be found.
+Exception Attributes: array (
+  'class' => 'FormComponent',
+  'plugin' => false,
+)
+Request URL: /users/add
+Stack Trace:
+#0 D:\Study\thefaen\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Form', Array)
+#1 D:\Study\thefaen\lib\Cake\Controller\Controller.php(644): ComponentCollection->init(Object(UsersController))
+#2 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\Study\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-09-11 16:10:40 Error: [Error] Class 'BlowfishPasswordHasher' not found
+Request URL: /users/add
+Stack Trace:
+#0 D:\Study\thefaen\lib\Cake\Event\CakeEventManager.php(241): User->beforeSave(Array)
+#1 D:\Study\thefaen\lib\Cake\Model\Model.php(1864): CakeEventManager->dispatch(Object(CakeEvent))
+#2 D:\Study\thefaen\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#3 D:\Study\thefaen\app\Controller\UsersController.php(22): Model->save(Array)
+#4 [internal function]: UsersController->add()
+#5 D:\Study\thefaen\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 D:\Study\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2016-09-12 05:23:29 Error: [MissingViewException] View file "Users\add_success.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\add_success.ctp',
+)
+Request URL: /users/addSuccess
+Stack Trace:
+#0 D:\Study\thefaen\lib\Cake\View\View.php(470): View->_getViewFileName('Users\\add_succe...')
+#1 D:\Study\thefaen\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#2 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\Study\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-09-14 05:19:09 Error: [MissingActionException] Action UsersController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'view',
+)
+Request URL: /users/view/1
+Stack Trace:
+#0 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 D:\Study\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-16 05:29:58 Error: [MissingViewException] View file "Users\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\login.ctp',
+)
+Request URL: /thefaen/
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\View\View.php(470): View->_getViewFileName('Users\\login')
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-09-16 05:40:06 Error: [Error] Class 'BlowfishPasswordHasher' not found
+Request URL: /thefaen/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Event\CakeEventManager.php(241): User->beforeSave(Array)
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(1864): CakeEventManager->dispatch(Object(CakeEvent))
+#2 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#3 C:\xampp\htdocs\thefaen\app\Controller\UsersController.php(55): Model->save(Array)
+#4 [internal function]: UsersController->add()
+#5 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2016-09-16 15:32:22 Error: [MissingViewException] View file "Users\index_of_admin.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\index_of_admin.ctp',
+)
+Request URL: /users/indexOfAdmin
+Stack Trace:
+#0 D:\Study\thefaen\lib\Cake\View\View.php(470): View->_getViewFileName('Users\\index_of_...')
+#1 D:\Study\thefaen\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#2 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\Study\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-09-16 15:32:58 Error: [MissingViewException] View file "Users\index_of_admin.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\index_of_admin.ctp',
+)
+Request URL: /users/indexOfAdmin
+Stack Trace:
+#0 D:\Study\thefaen\lib\Cake\View\View.php(470): View->_getViewFileName('Users\\index_of_...')
+#1 D:\Study\thefaen\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#2 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 D:\Study\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-09-20 06:46:33 Error: [MissingActionException] Action UsersController::indexOfAdmin() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'indexOfAdmin',
+)
+Request URL: /users/indexOfAdmin
+Stack Trace:
+#0 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 D:\Study\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-20 06:47:21 Error: [MissingActionException] Action UsersController::indexOfAdmin() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'indexOfAdmin',
+)
+Request URL: /users/indexOfAdmin
+Stack Trace:
+#0 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 D:\Study\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-20 06:47:34 Error: [MissingActionException] Action UsersController::indexOfAdmin() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'indexOfAdmin',
+)
+Request URL: /users/indexOfAdmin
+Stack Trace:
+#0 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 D:\Study\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-20 09:27:58 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /login
+Stack Trace:
+#0 D:\Study\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-09-20 09:44:37 Error: [TypeError] ReflectionMethod::__construct() expects exactly 1 parameter, 2 given
+Request URL: /users/indexOfManager
+Stack Trace:
+#0 D:\Study\thefaen\lib\Cake\Controller\Controller.php(483): ReflectionMethod->__construct(Object(UsersController), Array)
+#1 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#2 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#3 D:\Study\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#4 {main}
+2016-09-20 09:58:47 Error: [ParseError] syntax error, unexpected end of file, expecting function (T_FUNCTION)
+Request URL: /users/logout
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 D:\Study\thefaen\app\Controller\UsersController.php(9): spl_autoload_call('AppController')
+#2 D:\Study\thefaen\lib\Cake\Core\App.php(567): include('D:\\Study\\thefae...')
+#3 [internal function]: App::load('UsersController')
+#4 [internal function]: spl_autoload_call('UsersController')
+#5 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#6 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 D:\Study\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2016-09-20 09:58:47 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2016-09-20 09:58:47 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /users/logout
+Stack Trace:
+#0 D:\Study\thefaen\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 D:\Study\thefaen\lib\Cake\Core\App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 D:\Study\thefaen\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2016-09-20 10:00:13 Error: [MissingActionException] Action UsersController::add_staff() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add_staff',
+)
+Request URL: /users/add_staff
+Stack Trace:
+#0 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 D:\Study\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-20 10:01:06 Error: [MissingActionException] Action UsersController::add_staff() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add_staff',
+)
+Request URL: /users/add_staff
+Stack Trace:
+#0 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 D:\Study\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-20 10:01:09 Error: [MissingActionException] Action UsersController::add_staff() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add_staff',
+)
+Request URL: /users/add_staff
+Stack Trace:
+#0 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 D:\Study\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-20 10:40:32 Error: [MissingActionException] Action UsersController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'view',
+)
+Request URL: /users/view/1
+Stack Trace:
+#0 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 D:\Study\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-20 10:41:32 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /users/deleteStaff/13
+Stack Trace:
+#0 D:\Study\thefaen\app\Controller\UsersController.php(138): CakeRequest->allowMethod(Array, 'delete')
+#1 [internal function]: UsersController->deleteStaff('13')
+#2 D:\Study\thefaen\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 D:\Study\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2016-09-20 10:46:24 Error: [MissingActionException] Action UsersController::deleteStaff() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'deleteStaff',
+)
+Request URL: /users/deleteStaff/13
+Stack Trace:
+#0 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\Study\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 D:\Study\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-22 03:44:57 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /thefaen/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-22 04:39:58 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /thefaen/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-22 04:40:03 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /thefaen/users
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-22 04:40:18 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /thefaen/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-22 04:40:22 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /thefaen/users
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-22 05:13:58 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /thefaen/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-22 05:18:43 Error: [MissingActionException] Action UsersController::posts() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'posts',
+)
+Request URL: /thefaen/users/posts
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-22 05:34:46 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`thefaen`.`posts`, CONSTRAINT `posts_ibfk_1` FOREIGN KEY (`staff_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /thefaen/posts/add
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(468): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(434): DboSource->_execute('INSERT INTO `th...', Array)
+#2 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(1026): DboSource->execute('INSERT INTO `th...')
+#3 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(1933): DboSource->create(Object(Post), Array, Array)
+#4 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\xampp\htdocs\thefaen\app\Controller\PostsController.php(52): Model->save(Array)
+#6 [internal function]: PostsController->add()
+#7 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2016-09-22 05:36:37 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`thefaen`.`posts`, CONSTRAINT `posts_ibfk_1` FOREIGN KEY (`staff_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /thefaen/posts/add
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(468): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(434): DboSource->_execute('INSERT INTO `th...', Array)
+#2 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(1026): DboSource->execute('INSERT INTO `th...')
+#3 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(1933): DboSource->create(Object(Post), Array, Array)
+#4 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\xampp\htdocs\thefaen\app\Controller\PostsController.php(52): Model->save(Array)
+#6 [internal function]: PostsController->add()
+#7 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2016-09-22 05:37:59 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`thefaen`.`posts`, CONSTRAINT `posts_ibfk_2` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /thefaen/posts/add
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(468): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(434): DboSource->_execute('INSERT INTO `th...', Array)
+#2 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(1026): DboSource->execute('INSERT INTO `th...')
+#3 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(1933): DboSource->create(Object(Post), Array, Array)
+#4 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\xampp\htdocs\thefaen\app\Controller\PostsController.php(52): Model->save(Array)
+#6 [internal function]: PostsController->add()
+#7 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2016-09-22 06:26:25 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`thefaen`.`posts`, CONSTRAINT `posts_ibfk_1` FOREIGN KEY (`staff_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /thefaen/posts/add
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(468): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(434): DboSource->_execute('INSERT INTO `th...', Array)
+#2 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(1026): DboSource->execute('INSERT INTO `th...')
+#3 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(1933): DboSource->create(Object(Post), Array, Array)
+#4 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\xampp\htdocs\thefaen\app\Controller\PostsController.php(52): Model->save(Array)
+#6 [internal function]: PostsController->add()
+#7 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2016-09-22 06:28:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause'
+Request URL: /thefaen/posts/edit/5
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(468): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(434): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(1120): DboSource->fetchAll('SELECT `Post`.`...', Array)
+#4 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Post), Array)
+#5 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(3003): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(1659): Model->find('first', Array)
+#7 C:\xampp\htdocs\thefaen\app\Model\Post.php(67): Model->field('id', Array)
+#8 C:\xampp\htdocs\thefaen\app\Controller\PostsController.php(124): Post->isOwnedBy(5, '12')
+#9 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Component\Auth\ControllerAuthorize.php(63): PostsController->isAuthorized(Array)
+#10 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Component\AuthComponent.php(469): ControllerAuthorize->authorize(Array, Object(CakeRequest))
+#11 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Component\AuthComponent.php(310): AuthComponent->isAuthorized(Array)
+#12 C:\xampp\htdocs\thefaen\lib\Cake\Utility\ObjectCollection.php(128): AuthComponent->startup(Object(PostsController))
+#13 C:\xampp\htdocs\thefaen\lib\Cake\Event\CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#14 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#15 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#16 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#17 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2016-09-22 06:33:36 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause'
+Request URL: /thefaen/posts/delete/5
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(468): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(434): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(1120): DboSource->fetchAll('SELECT `Post`.`...', Array)
+#4 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Post), Array)
+#5 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(3003): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(1659): Model->find('first', Array)
+#7 C:\xampp\htdocs\thefaen\app\Model\Post.php(67): Model->field('id', Array)
+#8 C:\xampp\htdocs\thefaen\app\Controller\PostsController.php(124): Post->isOwnedBy(5, '12')
+#9 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Component\Auth\ControllerAuthorize.php(63): PostsController->isAuthorized(Array)
+#10 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Component\AuthComponent.php(469): ControllerAuthorize->authorize(Array, Object(CakeRequest))
+#11 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Component\AuthComponent.php(310): AuthComponent->isAuthorized(Array)
+#12 C:\xampp\htdocs\thefaen\lib\Cake\Utility\ObjectCollection.php(128): AuthComponent->startup(Object(PostsController))
+#13 C:\xampp\htdocs\thefaen\lib\Cake\Event\CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#14 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#15 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#16 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#17 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2016-09-22 06:35:59 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause'
+Request URL: /thefaen/posts/edit/6
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(468): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(434): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(1120): DboSource->fetchAll('SELECT `Post`.`...', Array)
+#4 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Post), Array)
+#5 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(3003): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(1659): Model->find('first', Array)
+#7 C:\xampp\htdocs\thefaen\app\Model\Post.php(67): Model->field('id', Array)
+#8 C:\xampp\htdocs\thefaen\app\Controller\PostsController.php(124): Post->isOwnedBy(6, '13')
+#9 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Component\Auth\ControllerAuthorize.php(63): PostsController->isAuthorized(Array)
+#10 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Component\AuthComponent.php(469): ControllerAuthorize->authorize(Array, Object(CakeRequest))
+#11 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Component\AuthComponent.php(310): AuthComponent->isAuthorized(Array)
+#12 C:\xampp\htdocs\thefaen\lib\Cake\Utility\ObjectCollection.php(128): AuthComponent->startup(Object(PostsController))
+#13 C:\xampp\htdocs\thefaen\lib\Cake\Event\CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#14 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#15 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#16 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#17 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2016-09-22 06:36:03 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause'
+Request URL: /thefaen/posts/edit/6
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(468): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(434): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(1120): DboSource->fetchAll('SELECT `Post`.`...', Array)
+#4 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Post), Array)
+#5 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(3003): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(1659): Model->find('first', Array)
+#7 C:\xampp\htdocs\thefaen\app\Model\Post.php(67): Model->field('id', Array)
+#8 C:\xampp\htdocs\thefaen\app\Controller\PostsController.php(124): Post->isOwnedBy(6, '13')
+#9 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Component\Auth\ControllerAuthorize.php(63): PostsController->isAuthorized(Array)
+#10 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Component\AuthComponent.php(469): ControllerAuthorize->authorize(Array, Object(CakeRequest))
+#11 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Component\AuthComponent.php(310): AuthComponent->isAuthorized(Array)
+#12 C:\xampp\htdocs\thefaen\lib\Cake\Utility\ObjectCollection.php(128): AuthComponent->startup(Object(PostsController))
+#13 C:\xampp\htdocs\thefaen\lib\Cake\Event\CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#14 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#15 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#16 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#17 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2016-09-22 06:36:08 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause'
+Request URL: /thefaen/posts/edit/5
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(468): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(434): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(1120): DboSource->fetchAll('SELECT `Post`.`...', Array)
+#4 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Post), Array)
+#5 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(3003): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(1659): Model->find('first', Array)
+#7 C:\xampp\htdocs\thefaen\app\Model\Post.php(67): Model->field('id', Array)
+#8 C:\xampp\htdocs\thefaen\app\Controller\PostsController.php(124): Post->isOwnedBy(5, '13')
+#9 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Component\Auth\ControllerAuthorize.php(63): PostsController->isAuthorized(Array)
+#10 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Component\AuthComponent.php(469): ControllerAuthorize->authorize(Array, Object(CakeRequest))
+#11 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Component\AuthComponent.php(310): AuthComponent->isAuthorized(Array)
+#12 C:\xampp\htdocs\thefaen\lib\Cake\Utility\ObjectCollection.php(128): AuthComponent->startup(Object(PostsController))
+#13 C:\xampp\htdocs\thefaen\lib\Cake\Event\CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#14 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#15 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#16 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#17 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2016-09-22 06:39:44 Error: [Error] Call to a member function find() on null
+Request URL: /thefaen/posts/edit/6
+Stack Trace:
+#0 [internal function]: PostsController->edit('6')
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-09-23 03:56:42 Error: [MissingActionException] Action UsersController::posts() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'posts',
+)
+Request URL: /thefaen/users/posts
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-23 04:15:02 Error: [MissingHelperException] Helper class PostHelper could not be found.
+Exception Attributes: array (
+  'class' => 'PostHelper',
+  'plugin' => false,
+)
+Request URL: /thefaen/posts
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Post')
+#1 C:\xampp\htdocs\thefaen\lib\Cake\View\View.php(858): HelperCollection->__isset('Post')
+#2 C:\xampp\htdocs\thefaen\app\View\Posts\index.ctp(30): View->__get('Post')
+#3 C:\xampp\htdocs\thefaen\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\thefaen\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\thefaen\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-09-23 04:15:39 Error: [MissingHelperException] Helper class PostHelper could not be found.
+Exception Attributes: array (
+  'class' => 'PostHelper',
+  'plugin' => false,
+)
+Request URL: /thefaen/posts
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Post')
+#1 C:\xampp\htdocs\thefaen\lib\Cake\View\View.php(858): HelperCollection->__isset('Post')
+#2 C:\xampp\htdocs\thefaen\app\View\Posts\index.ctp(30): View->__get('Post')
+#3 C:\xampp\htdocs\thefaen\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\thefaen\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\thefaen\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-09-23 04:18:00 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /thefaen/posts
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Auth')
+#1 C:\xampp\htdocs\thefaen\lib\Cake\View\View.php(858): HelperCollection->__isset('Auth')
+#2 C:\xampp\htdocs\thefaen\app\View\Posts\index.ctp(30): View->__get('Auth')
+#3 C:\xampp\htdocs\thefaen\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\thefaen\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\thefaen\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-09-23 04:23:54 Error: [MissingControllerException] Controller class CategoriesController could not be found.
+Exception Attributes: array (
+  'class' => 'CategoriesController',
+  'plugin' => NULL,
+)
+Request URL: /thefaen/categories/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-09-23 04:23:57 Error: [MissingActionException] Action UsersController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'view',
+)
+Request URL: /thefaen/users/view/13
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-23 04:46:56 Error: [MissingActionException] Action UsersController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'view',
+)
+Request URL: /thefaen/users/view/13
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-23 04:47:34 Error: [MissingActionException] Action UsersController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'view',
+)
+Request URL: /thefaen/users/view/13
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-23 05:11:08 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /thefaen/users/
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-23 05:13:47 Error: [NotFoundException] Người dùng không hợp lệ
+Request URL: /thefaen/users/editMember/15
+Stack Trace:
+#0 [internal function]: UsersController->editMember('15')
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-09-23 09:35:23 Error: [MissingActionException] Action UsersController::viewManager() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'viewManager',
+)
+Request URL: /thefaen/users/viewManager/7
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-23 13:56:30 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'staff1' for key 'username'
+Request URL: /thefaen/users/addStaff
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(468): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(434): DboSource->_execute('INSERT INTO `th...', Array)
+#2 C:\xampp\htdocs\thefaen\lib\Cake\Model\Datasource\DboSource.php(1026): DboSource->execute('INSERT INTO `th...')
+#3 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(1933): DboSource->create(Object(User), Array, Array)
+#4 C:\xampp\htdocs\thefaen\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\xampp\htdocs\thefaen\app\Controller\UsersController.php(160): Model->save(Array)
+#6 [internal function]: UsersController->addStaff()
+#7 C:\xampp\htdocs\thefaen\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2016-09-23 14:57:08 Error: [MissingActionException] Action UsersController::listStaff() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'listStaff',
+)
+Request URL: /thefaen/users/listStaff
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\thefaen\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-09-23 15:00:45 Error: [MissingControllerException] Controller class FoodsController could not be found.
+Exception Attributes: array (
+  'class' => 'FoodsController',
+  'plugin' => NULL,
+)
+Request URL: /thefaen/foods
+Stack Trace:
+#0 C:\xampp\htdocs\thefaen\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
